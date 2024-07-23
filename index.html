@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>苏州爱目医疗科技有限公司</title>
+        <meta id="description" name="description" content="苏州爱目医疗科技有限公司" />
+        <meta id="keywords" name="keywords" content="苏州爱目医疗科技有限公司" />
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/ml_index.css" />
+        <link rel="stylesheet" href="css/ML_swiper.min.css" />
+        <link rel="stylesheet" href="ML_font-awesome/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="css/ML_aos.css" />
+        <script src="js/ML_jquery.min.js"></script>
+        <script src="js/ML_aos.js"></script>
+        <script src="js/ML_swiper.min.js"></script>
+        <!--  All Javascript -->
+    </head>
+
+    <body>
+        <script type="text/javascript" src="https://tyw.key.400301.com/js/replace_word_limit.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script type="text/javascript" language="javascript">
+            //①搜索开始
+            function checkSearch() {
+                if ($('#KeyName').val() == '' || $('#KeyName').val() == null) {
+                    alert('请输入搜索关键词');
+                    $('#KeyName').val('');
+                    $('#KeyName').focus();
+                    return false;
+                }
+                var Search_url = $('#key-Search').attr('value');
+                window.location.href = Search_url + '?q=' + escape($('#KeyName').val());
+            }
+
+            //②按下回车键出发某个按钮开始
+            document.onkeydown = function (event) {
+                e = event ? event : window.event ? window.event : null;
+                if (e.keyCode == 13) {
+                    document.getElementById('SearchButton').click();
+                    return false;
+                }
+            };
+        </script>
+        <a href="ProSearch.aspx" style="display: none" value="ProSearch.aspx" id="key-Search"></a>
+        <!-- 手机端头部箭头 -->
+        <link rel="stylesheet" href="css/nav.css" />
+        <link rel="stylesheet" href="css/bugfixed.css" />
+
+        <!-- 手机端头部箭头 -->
+
+        <!-- 电脑端头部 -->
+        <div class="pchead">
+            <div class="pcheader">
+                <a href="/" class="pclogo">
+                    <!-- <img src="upload/img/20231116150436.png" alt="公司LOGO" /> -->
+                    <span style="color: #00aca0; font-size: 22px; font-weight: bold; line-height: 40px">苏州爱目医疗科技有限公司</span>
+                </a>
+                <ul class="pcnav">
+                    <!-- 一级导航 -->
+
+                    <li class="first_li">
+                        <a class="first_a" href="Default.aspx">首页</a>
+                    </li>
+
+                    <li class="first_li">
+                        <a class="first_a" href="Aboutus.html?ClassID=2">关于我们</a>
+                    </li>
+
+                    <li class="first_li">
+                        <a class="first_a" href="Product.aspx">产品中心</a>
+                    </li>
+
+                    <li class="first_li">
+                        <a class="first_a" href="News.aspx?ClassID=14">新闻中心</a>
+
+                        <!-- 二级导航 -->
+                        <ul class="pc_sec_nav">
+                            <li class="pc_sec_item">
+                                <a href="News.aspx?ClassID=14" class="second_a">新闻资讯</a>
+                            </li>
+
+                            <li class="pc_sec_item">
+                                <a href="News.aspx?ClassID=15" class="second_a">集团新闻</a>
+                            </li>
+
+                            <li class="pc_sec_item">
+                                <a href="News.aspx?ClassID=16" class="second_a">行业新闻</a>
+                            </li>
+
+                            <li class="pc_sec_item">
+                                <a href="News.aspx?ClassID=17" class="second_a">媒体报道</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="first_li">
+                        <a class="first_a" href="News.aspx?ClassID=5">办公环境</a>
+                    </li>
+
+                    <li class="first_li">
+                        <a class="first_a" href="Message.aspx?ClassID=22">在线留言</a>
+                    </li>
+
+                    <li class="first_li">
+                        <a class="first_a" href="Contact.aspx?ClassID=23">联系我们</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 电脑端头部 -->
+        <!-- 手机端头部 -->
+        <div class="ml_mb_head" data-aos="zoom-in">
+            <a href="/" class="ml_mb_logo"> <img src="upload/img/20231116150436.png" /></a>
+            <div class="hb">
+                <span class="top_span"></span>
+                <span class="center_span"></span>
+                <span class="bottom_span"></span>
+            </div>
+        </div>
+        <!-- 手机端头部 -->
+        <!-- 手机端菜单 -->
+        <div class="ml_mb_nav">
+            <!-- 存在二级和三级的时候添加箭头 -->
+            <!-- 一级菜单 -->
+            <div class="ml_mbnav_1">
+                <div class="ml_mbnav_1_item">
+                    <a href="Default.aspx">首页</a>
+                </div>
+                <!-- 二级菜单 -->
+                <!-- 存在二级和三级的时候添加箭头 -->
+
+                <div class="ml_mbnav_1_item">
+                    <a href="Aboutus.aspx?ClassID=2">关于我们</a>
+                </div>
+                <!-- 二级菜单 -->
+                <!-- 存在二级和三级的时候添加箭头 -->
+
+                <div class="ml_mbnav_1_item">
+                    <a href="Product.aspx">产品中心</a>
+                </div>
+                <!-- 二级菜单 -->
+                <!-- 存在二级和三级的时候添加箭头 -->
+
+                <div class="ml_mbnav_1_item">
+                    <a href="News.aspx?ClassID=14">新闻中心</a>
+                    <i class="fa fa-angle-right mb_item1_arrow"></i>
+                </div>
+                <!-- 二级菜单 -->
+                <!-- 存在二级和三级的时候添加箭头 -->
+
+                <div class="ml_mbnav_2">
+                    <div class="ml_mbnav_2_item">
+                        <a href="News.aspx?ClassID=14">新闻资讯</a>
+                    </div>
+
+                    <div class="ml_mbnav_2_item">
+                        <a href="News.aspx?ClassID=15">集团新闻</a>
+                    </div>
+
+                    <div class="ml_mbnav_2_item">
+                        <a href="News.aspx?ClassID=16">行业新闻</a>
+                    </div>
+
+                    <div class="ml_mbnav_2_item">
+                        <a href="News.aspx?ClassID=17">媒体报道</a>
+                    </div>
+                </div>
+
+                <div class="ml_mbnav_1_item">
+                    <a href="News.aspx?ClassID=5">办公环境</a>
+                </div>
+                <!-- 二级菜单 -->
+                <!-- 存在二级和三级的时候添加箭头 -->
+
+                <div class="ml_mbnav_1_item">
+                    <a href="Message.aspx?ClassID=22">在线留言</a>
+                </div>
+                <!-- 二级菜单 -->
+                <!-- 存在二级和三级的时候添加箭头 -->
+
+                <div class="ml_mbnav_1_item">
+                    <a href="Contact.aspx?ClassID=23">联系我们</a>
+                </div>
+                <!-- 二级菜单 -->
+                <!-- 存在二级和三级的时候添加箭头 -->
+            </div>
+        </div>
+        <!-- 手机端菜单 -->
+        <!-- 固定分隔 -->
+        <div class="sep"></div>
+
+        <div class="swiper-container ml_banner">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="source_images/banner/导出图片-07.png" alt="通栏图片" />
+                    </a>
+                </div>
+
+                <div class="swiper-slide">
+                    <a href="#"> <img src="source_images/banner/导出图片-02.png" alt="通栏图片" /></a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#"> <img src="source_images/banner/导出图片-01.png" alt="通栏图片" /></a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#"> <img src="source_images/banner/导出图片-06.png" alt="通栏图片" /></a>
+                </div>
+
+                <div class="swiper-slide">
+                    <a href="#"> <img src="source_images/banner/导出图片-05.png" alt="通栏图片" /></a>
+                </div>
+
+                <div class="swiper-slide">
+                    <a href="#"> <img src="source_images/banner/导出图片-04.png" alt="通栏图片" /></a>
+                </div>
+
+                <div class="swiper-slide">
+                    <a href="#"> <img src="source_images/banner/导出图片-01.png" alt="通栏图片" /></a>
+                </div>
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination bannerpage swiper-pagination-white"></div>
+
+            <!-- 如果需要导航按钮 -->
+            <div class="swiper-button-prev bannerbtn bannerbtnleft"><i class="fa fa-angle-left"></i></div>
+            <div class="swiper-button-next bannerbtn bannerbtnright"><i class="fa fa-angle-right"></i></div>
+        </div>
+
+        <div class="con1">
+            <div class="con1con">
+                <div class="con_title">
+                    <strong>产品中心/Product center</strong>
+                    <p>
+                        我们的产品和解决方案涵盖了生物医药、生物农业、生物工程等多个领域，包括基因编辑、细胞培养、蛋白质表达、抗体制备、生物芯片等多个方面。我们的产品和解决方案已经被广泛应用于医疗、农业、环保、食品安全等多个领域，为客户提供了高效、可靠、安全的生物技术产品和解决方案。
+                    </p>
+                </div>
+
+                <ul>
+                    <li data-aos="fade-up" onclick="window.open('ProDetail.aspx?Proid=43','_self')" style="border-radius: 10px">
+                        <img src="source_images/ps-1.jpg" alt="屈光显微手术器械" />
+                        <span>屈光显微手术器械</span>
+                    </li>
+
+                    <li data-aos="fade-up" onclick="window.open('ProDetail.aspx?Proid=42','_self')" style="border-radius: 10px">
+                        <img src="source_images/ps-2.jpg" alt="玻切显微手术器械" />
+                        <span>玻切显微手术器械</span>
+                    </li>
+
+                    <li data-aos="fade-up" onclick="window.open('ProDetail.aspx?Proid=41','_self')" style="border-radius: 10px">
+                        <img src="source_images/home/WechatIMG129.jpg" alt="" />
+                        <span></span>
+                    </li>
+
+                    <li data-aos="fade-up" onclick="window.open('ProDetail.aspx?Proid=40','_self')" style="border-radius: 10px">
+                        <img src="source_images/home/WechatIMG124.jpg" alt="" />
+                        <span></span>
+                    </li>
+                </ul>
+
+                <a href="Product.aspx" class="more2">查看更多</a>
+            </div>
+        </div>
+        <!-- con2 -->
+        <div class="con2">
+            <div class="con2con">
+                <strong>产品中心</strong>
+                <div class="swiper-container mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="NewsDetail.aspx?ID=167"> <img src="upload/20230720141337.jpg" alt="办公环境" /></a>
+                            <p>办公环境</p>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="NewsDetail.aspx?ID=149"> <img src="upload/20230720140958.jpg" alt="办公环境" /></a>
+                            <p>办公环境</p>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="NewsDetail.aspx?ID=148"> <img src="upload/20230720141018.jpg" alt="办公环境" /></a>
+                            <p>办公环境</p>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="NewsDetail.aspx?ID=147"> <img src="upload/20230720141030.jpg" alt="办公环境" /></a>
+                            <p>办公环境</p>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="NewsDetail.aspx?ID=146"> <img src="upload/20230720141046.jpg" alt="办公环境" /></a>
+                            <p>办公环境</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="News.aspx?ClassID=5" class="more">查看更多</a>
+            </div>
+        </div>
+        <!-- con3 -->
+        <div class="con3">
+            <div class="con3con">
+                <div class="con_title">
+                    <strong>关于我们/About us</strong>
+                    <p>
+                        我们是一家专注于生物科技领域的公司，致力于研究和开发创新的生物技术产品和解决方案，以满足全球客户的需求。产品和解决方案涵盖了生物医药、生物农业、生物工程等多个领域，包括基因编辑、细胞培养、蛋白质表达、抗体制备、生物芯片等多个方面。我们的产品和解决方案已经被广泛应用于医疗、农业、环保、食品安全等多个领域，为客户提供了高效、可靠、安全的生物技术产品和解决方案。
+                    </p>
+                </div>
+                <a href="Aboutus.aspx?ClassID=2" class="more">查看更多</a>
+                <ul>
+                    <li data-aos="fade-up">
+                        <strong>10+年</strong>
+                        <p>公司成立</p>
+                    </li>
+
+                    <li data-aos="fade-up">
+                        <strong>2000+平</strong>
+                        <p>办公面积</p>
+                    </li>
+
+                    <li data-aos="fade-up">
+                        <strong>100+人</strong>
+                        <p>在职员工</p>
+                    </li>
+
+                    <li data-aos="fade-up">
+                        <strong>20+件</strong>
+                        <p>获得资质</p>
+                    </li>
+                </ul>
+            </div>
+            <img class="flo_img" src="upload/img/20230712153937.png" alt="关于我们" />
+        </div>
+        <!-- con4 -->
+        <div class="con4">
+            <div class="con4con">
+                <div class="con_title">
+                    <strong>创新生命，改变世界</strong>
+                    <p>
+                        我们的产品和解决方案涵盖了生物医药、生物农业、生物工程等多个领域，包括基因编辑、细胞培养、蛋白质表达、抗体制备、生物芯片等多个方面。我们的产品和解决方案已经被广泛应用于医疗、农业、环保、食品安全等多个领域，为客户提供了高效、可靠、安全的生物技术产品和解决方案
+                    </p>
+                </div>
+                <ul>
+                    <li>
+                        <img data-aos="fade-up" src="upload/20230720143007.png" alt="行业标杆" />
+                        <p>行业标杆</p>
+                        <span>以合成生物科技为驱动，致力于不断提高生命质量</span>
+                    </li>
+
+                    <li>
+                        <img data-aos="fade-up" src="upload/20230712151935.png" alt="品质卓越" />
+                        <p>品质卓越</p>
+                        <span>通过创新和研发，为人们带来更健康、更美好的生活</span>
+                    </li>
+
+                    <li>
+                        <img data-aos="fade-up" src="upload/20230720143229.png" alt="科技赋能" />
+                        <p>科技赋能</p>
+                        <span>延长生命长度，为人类带来健康、美丽、快乐的生命</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- con5 -->
+        <div class="con5">
+            <div class="con5con">
+                <div class="con_title">
+                    <strong>新闻资讯/News</strong>
+                    <p>
+                        全球知名的生物科技公司和生物材料公司。公司以合成生物科技为驱动，致力于不断提高生命质量、延长生命长度，为人类带来健康、美丽、快乐的生命体验食品级透明质酸产品获得了国际Kosher犹太洁食认证和国际Halal清真食品认证
+                    </p>
+                </div>
+                <div class="topnews">
+                    <div class="topnewsleft">
+                        <a href="NewsDetail.aspx?ID=34"><img src="upload/20230720144737.jpg" alt="upload/20230720144737.jpg" /></a>
+                    </div>
+                    <div class="topnewsright">
+                        <div class="tag">新动态</div>
+                        <a href="NewsDetail.aspx?ID=34"> AI这次又“抢”了谁的饭碗？直播间里的数字人 </a>
+                        <span>2023-05-24</span>
+                        <p>
+                            近期，在一些短视频平台，时不时会刷到这样“惊悚”的一幕：镜头扫过一个房间，桌子上摆放着数十台电脑，屏幕上的主播正实时在线直播卖货，配文却赫然写着：“太吓人了，200平方米直播基地空无一人，全是AI数字人直播。”
+                        </p>
+                    </div>
+                </div>
+                <div class="centernew">
+                    <div class="centernewitem" data-aos="fade-up">
+                        <div class="centernewitem_top" style="background-image: url(upload/img/20230712154003.png)">
+                            <span>集团新闻</span>
+                            <a href="News.aspx?ClassID=15">更多</a>
+                        </div>
+                        <div class="centernewitem_box">
+                            <ul>
+                                <li>
+                                    <a href="NewsDetail.aspx?ID=18"> 这里是新闻三的内容 </a>
+                                    <span>2023-06-19</span>
+                                </li>
+
+                                <li>
+                                    <a href="NewsDetail.aspx?ID=42"> AI这次又“抢”了谁的饭碗？直播间里的数字人 </a>
+                                    <span>2023-05-24</span>
+                                </li>
+
+                                <li>
+                                    <a href="NewsDetail.aspx?ID=40"> 2023年闵行科技节开幕，170余项活动等你来 </a>
+                                    <span>2023-05-24</span>
+                                </li>
+
+                                <li>
+                                    <a href="NewsDetail.aspx?ID=39"> 神舟十六号整装待发，或将首次迎来非飞行员出身的“航天员 </a>
+                                    <span>2023-05-24</span>
+                                </li>
+
+                                <li>
+                                    <a href="NewsDetail.aspx?ID=38">
+                                        中国食品科学技术学会第十六届年会暨第十届中美食品业高层论坛在武汉召开
+                                    </a>
+                                    <span>2023-05-16</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="centernewitem" data-aos="fade-up">
+                        <div class="centernewitem_top" style="background-image: url(upload/img/20230712154012.png)">
+                            <span>行业新闻</span>
+                            <a href="News.aspx?ClassID=16">更多</a>
+                        </div>
+                        <div class="centernewitem_box">
+                            <ul>
+                                <li>
+                                    <a href="NewsDetail.aspx?ID=50"> AI这次又“抢”了谁的饭碗？直播间里的数字人 </a>
+                                    <span>2023-05-24</span>
+                                </li>
+
+                                <li>
+                                    <a href="NewsDetail.aspx?ID=48"> 2023年闵行科技节开幕，170余项活动等你来 </a>
+                                    <span>2023-05-24</span>
+                                </li>
+
+                                <li>
+                                    <a href="NewsDetail.aspx?ID=47"> 神舟十六号整装待发，或将首次迎来非飞行员出身的“航天员 </a>
+                                    <span>2023-05-24</span>
+                                </li>
+
+                                <li>
+                                    <a href="NewsDetail.aspx?ID=46">
+                                        中国食品科学技术学会第十六届年会暨第十届中美食品业高层论坛在武汉召开
+                                    </a>
+                                    <span>2023-05-16</span>
+                                </li>
+
+                                <li>
+                                    <a href="NewsDetail.aspx?ID=45"> 中国食品科学技术学会：保障特殊时期食品供应及安全 </a>
+                                    <span>2023-05-16</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="centernewitem" data-aos="fade-up">
+                        <div class="centernewitem_top" style="background-image: url(upload/img/20230712154022.png)">
+                            <span>媒体报道</span>
+                            <a href="News.aspx?ClassID=17">更多</a>
+                        </div>
+                        <div class="centernewitem_box">
+                            <ul>
+                                <li>
+                                    <a href="NewsDetail.aspx?ID=58"> AI这次又“抢”了谁的饭碗？直播间里的数字人 </a>
+                                    <span>2023-05-24</span>
+                                </li>
+
+                                <li>
+                                    <a href="NewsDetail.aspx?ID=56"> 2023年闵行科技节开幕，170余项活动等你来 </a>
+                                    <span>2023-05-24</span>
+                                </li>
+
+                                <li>
+                                    <a href="NewsDetail.aspx?ID=55"> 神舟十六号整装待发，或将首次迎来非飞行员出身的“航天员 </a>
+                                    <span>2023-05-24</span>
+                                </li>
+
+                                <li>
+                                    <a href="NewsDetail.aspx?ID=54">
+                                        中国食品科学技术学会第十六届年会暨第十届中美食品业高层论坛在武汉召开
+                                    </a>
+                                    <span>2023-05-16</span>
+                                </li>
+
+                                <li>
+                                    <a href="NewsDetail.aspx?ID=53"> 中国食品科学技术学会：保障特殊时期食品供应及安全 </a>
+                                    <span>2023-05-16</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 底部 -->
+
+        <div class="foot">
+            <div class="footer">
+                <div class="footerleft">
+                    <ul>
+                        <li>
+                            <strong style="cursor: pointer" onclick="window.open('Default.aspx','_self')">首页</strong>
+                        </li>
+
+                        <li>
+                            <strong style="cursor: pointer" onclick="window.open('Aboutus.aspx?ClassID=2','_self')">关于我们</strong>
+                        </li>
+
+                        <li>
+                            <strong style="cursor: pointer" onclick="window.open('Product.aspx','_self')">产品中心</strong>
+                        </li>
+
+                        <li>
+                            <strong style="cursor: pointer" onclick="window.open('News.aspx?ClassID=14','_self')">新闻中心</strong>
+
+                            <a href="News.aspx?ClassID=14"> 新闻资讯 </a>
+
+                            <a href="News.aspx?ClassID=15"> 集团新闻 </a>
+
+                            <a href="News.aspx?ClassID=16"> 行业新闻 </a>
+
+                            <a href="News.aspx?ClassID=17"> 媒体报道 </a>
+                        </li>
+
+                        <li>
+                            <strong style="cursor: pointer" onclick="window.open('News.aspx?ClassID=5','_self')">办公环境</strong>
+                        </li>
+
+                        <li>
+                            <strong style="cursor: pointer" onclick="window.open('Message.aspx?ClassID=22','_self')">在线留言</strong>
+                        </li>
+
+                        <li>
+                            <strong style="cursor: pointer" onclick="window.open('Contact.aspx?ClassID=23','_self')">联系我们</strong>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footerright">
+                    <ul>
+                        <li>
+                            <img src="upload/img/20230719172413.jpg" alt="微信" />
+                            <p>微信</p>
+                        </li>
+                        <li>
+                            <img src="upload/img/20230719172431.png" alt="官网" />
+                            <p>官网</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- copy -->
+        <div class="copy">
+            <div class="copycon">
+                © 2024 苏州爱目医疗科技有限公司&nbsp;&nbsp;All Rights Reserved. &nbsp;&nbsp;备案号：<a
+                    href="http://beian.miit.gov.cn/"
+                    target="_blank"
+                    >苏ICP备202388888888号</a
+                >
+
+                <a href="https://www.400301.com/" title="腾云建站仅向商家提供技术服务" target="_blank"> 腾云建站仅向商家提供技术服务 </a>
+            </div>
+        </div>
+
+        <script src="js/bugFixed.js"></script>
+        <script src="js/ml_script.js"></script>
+
+        <!-- 购物车 -->
+
+        <!-- 网站通用侧边栏底部菜单 -->
+        <link rel="stylesheet" href="css/ML_contact_nav.css" />
+        <!-- 手机端底部菜单 -->
+        <ul class="ml_mbbot">
+            <li>
+                <a href="/" style="text-align: center">
+                    <i class="fa fa-home"></i>
+                    <p>首页</p>
+                </a>
+            </li>
+            <li>
+                <a href="Tel:0513-88888888" style="text-align: center">
+                    <i class="fa fa-phone"></i>
+                    <p>电话</p>
+                </a>
+            </li>
+            <li>
+                <a href="Message.aspx?ClassID=22" style="text-align: center">
+                    <i class="fa fa-envelope-o"></i>
+                    <p>留言</p>
+                </a>
+            </li>
+            <li>
+                <a href="#top" style="text-align: center">
+                    <i class="fa fa-arrow-circle-o-up"></i>
+                    <p>回到顶部</p>
+                </a>
+            </li>
+        </ul>
+        <!-- 手机端底部菜单 -->
+
+        <!-- 电脑侧边栏 -->
+
+        <div class="ml_sidebar">
+            <ul>
+                <li>
+                    <i class="fa fa-phone"></i><span>电话</span>
+                    <div class="ml_sidebar_pos">18888888888</div>
+                </li>
+
+                <li>
+                    <i class="fa fa-qq"></i><span>QQ</span>
+                    <div class="ml_sidebar_pos">888888</div>
+                </li>
+
+                <li>
+                    <i class="fa fa-qrcode"></i><span>微信</span>
+                    <div class="ml_sidebar_pos ml_sidebar_pos_code">
+                        <img src="upload/20230719172345.jpg" alt="二维码" />
+                    </div>
+                </li>
+
+                <li onclick="window.open('tencent://message/?uin=888888&Site=Sambow&Menu=yes')">
+                    <i class="fa fa-user"></i><span>客服</span>
+                </li>
+
+                <li class="backtotop ml_sidebar_show">
+                    <a href="#top" style="color: #fff; display: flex; flex-direction: column"
+                        ><i class="fa fa-angle-up"></i><span>返回顶部</span></a
+                    >
+                </li>
+            </ul>
+        </div>
+
+        <!-- 电脑侧边栏 -->
+        <!-- 网站通用侧边栏底部菜单 -->
+    </body>
+</html>

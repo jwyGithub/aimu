@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>苏州爱目医疗科技有限公司</title>
+        <meta id="description" name="description" content="苏州爱目医疗科技有限公司" />
+        <meta id="keywords" name="keywords" content="苏州爱目医疗科技有限公司" />
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/ml_index.css" />
+        <link rel="stylesheet" href="css/ML_swiper.min.css" />
+        <link rel="stylesheet" href="ML_font-awesome/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="css/ML_aos.css" />
+        <script src="js/ML_jquery.min.js"></script>
+        <script src="js/ML_aos.js"></script>
+        <script src="js/ML_swiper.min.js"></script>
+
+        <link rel="stylesheet" href="css/commonStyle.css" />
+    </head>
+    <body>
+        <script type="text/javascript" src="https://tyw.key.400301.com/js/replace_word_limit.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script type="text/javascript" language="javascript">
+            //①搜索开始
+            function checkSearch() {
+                if ($('#KeyName').val() == '' || $('#KeyName').val() == null) {
+                    alert('请输入搜索关键词');
+                    $('#KeyName').val('');
+                    $('#KeyName').focus();
+                    return false;
+                }
+                var Search_url = $('#key-Search').attr('value');
+                window.location.href = Search_url + '?q=' + escape($('#KeyName').val());
+            }
+
+            //②按下回车键出发某个按钮开始
+            document.onkeydown = function (event) {
+                e = event ? event : window.event ? window.event : null;
+                if (e.keyCode == 13) {
+                    document.getElementById('SearchButton').click();
+                    return false;
+                }
+            };
+        </script>
+        <a href="ProSearch.aspx" style="display: none" value="ProSearch.aspx" id="key-Search"></a>
+        <!-- 手机端头部箭头 -->
+        <link rel="stylesheet" href="css/nav.css" />
+        <link rel="stylesheet" href="css/bugfixed.css" />
+
+        <!-- 手机端头部箭头 -->
+
+        <!-- 电脑端头部 -->
+        <div class="pchead">
+            <div class="pcheader">
+                <a href="/" class="pclogo"><img src="upload/img/20231116150436.png" alt="公司LOGO" /></a>
+                <ul class="pcnav">
+                    <!-- 一级导航 -->
+
+                    <li class="first_li">
+                        <a class="first_a" href="Default.aspx">首页</a>
+                    </li>
+
+                    <li class="first_li">
+                        <a class="first_a" href="Aboutus.html?ClassID=2">关于我们</a>
+                    </li>
+
+                    <li class="first_li">
+                        <a class="first_a" href="Product.aspx">产品中心</a>
+                    </li>
+
+                    <li class="first_li">
+                        <a class="first_a" href="News.aspx?ClassID=14">新闻中心</a>
+
+                        <!-- 二级导航 -->
+                        <ul class="pc_sec_nav">
+                            <li class="pc_sec_item">
+                                <a href="News.aspx?ClassID=14" class="second_a">新闻资讯</a>
+                            </li>
+
+                            <li class="pc_sec_item">
+                                <a href="News.aspx?ClassID=15" class="second_a">集团新闻</a>
+                            </li>
+
+                            <li class="pc_sec_item">
+                                <a href="News.aspx?ClassID=16" class="second_a">行业新闻</a>
+                            </li>
+
+                            <li class="pc_sec_item">
+                                <a href="News.aspx?ClassID=17" class="second_a">媒体报道</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="first_li">
+                        <a class="first_a" href="News.aspx?ClassID=5">办公环境</a>
+                    </li>
+
+                    <li class="first_li">
+                        <a class="first_a" href="Message.aspx?ClassID=22">在线留言</a>
+                    </li>
+
+                    <li class="first_li">
+                        <a class="first_a" href="Contact.aspx?ClassID=23">联系我们</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 电脑端头部 -->
+        <!-- 手机端头部 -->
+        <div class="ml_mb_head" data-aos="zoom-in">
+            <a href="/" class="ml_mb_logo"> <img src="upload/img/20231116150436.png" /></a>
+            <div class="hb">
+                <span class="top_span"></span>
+                <span class="center_span"></span>
+                <span class="bottom_span"></span>
+            </div>
+        </div>
+        <!-- 手机端头部 -->
+        <!-- 手机端菜单 -->
+        <div class="ml_mb_nav">
+            <!-- 存在二级和三级的时候添加箭头 -->
+            <!-- 一级菜单 -->
+            <div class="ml_mbnav_1">
+                <div class="ml_mbnav_1_item">
+                    <a href="Default.aspx">首页</a>
+                </div>
+                <!-- 二级菜单 -->
+                <!-- 存在二级和三级的时候添加箭头 -->
+
+                <div class="ml_mbnav_1_item">
+                    <a href="Aboutus.html?ClassID=2">关于我们</a>
+                </div>
+                <!-- 二级菜单 -->
+                <!-- 存在二级和三级的时候添加箭头 -->
+
+                <div class="ml_mbnav_1_item">
+                    <a href="Product.aspx">产品中心</a>
+                </div>
+                <!-- 二级菜单 -->
+                <!-- 存在二级和三级的时候添加箭头 -->
+
+                <div class="ml_mbnav_1_item">
+                    <a href="News.aspx?ClassID=14">新闻中心</a>
+                    <i class="fa fa-angle-right mb_item1_arrow"></i>
+                </div>
+                <!-- 二级菜单 -->
+                <!-- 存在二级和三级的时候添加箭头 -->
+
+                <div class="ml_mbnav_2">
+                    <div class="ml_mbnav_2_item">
+                        <a href="News.aspx?ClassID=14">新闻资讯</a>
+                    </div>
+
+                    <div class="ml_mbnav_2_item">
+                        <a href="News.aspx?ClassID=15">集团新闻</a>
+                    </div>
+
+                    <div class="ml_mbnav_2_item">
+                        <a href="News.aspx?ClassID=16">行业新闻</a>
+                    </div>
+
+                    <div class="ml_mbnav_2_item">
+                        <a href="News.aspx?ClassID=17">媒体报道</a>
+                    </div>
+                </div>
+
+                <div class="ml_mbnav_1_item">
+                    <a href="News.aspx?ClassID=5">办公环境</a>
+                </div>
+                <!-- 二级菜单 -->
+                <!-- 存在二级和三级的时候添加箭头 -->
+
+                <div class="ml_mbnav_1_item">
+                    <a href="Message.aspx?ClassID=22">在线留言</a>
+                </div>
+                <!-- 二级菜单 -->
+                <!-- 存在二级和三级的时候添加箭头 -->
+
+                <div class="ml_mbnav_1_item">
+                    <a href="Contact.aspx?ClassID=23">联系我们</a>
+                </div>
+                <!-- 二级菜单 -->
+                <!-- 存在二级和三级的时候添加箭头 -->
+            </div>
+        </div>
+        <!-- 手机端菜单 -->
+        <!-- 固定分隔 -->
+        <div class="sep"></div>
+        <!-- 内页通栏 -->
+
+        <div class="inbanner" style="background-image: url(upload/img/20230616165251.png)">
+            <div class="inbannercon">
+                <strong>About us</strong>
+                <p>关于我们</p>
+            </div>
+        </div>
+
+        <div class="ml_bread_inner">
+            <a href="/">首页</a>
+            <span>></span>
+            <a>关于我们</a>
+        </div>
+        <!-- 内页二级 -->
+        <!-- 内页面包屑 -->
+        <div class="aboutus1">
+            <div class="aboutus1con">
+                <div class="aboutus1conleft">
+                    <p>
+                        我们是一家专注于生物科技领域的公司，致力于研究和开发创新的生物技术产品和解决方案，以满足全球客户的需求。产品和解决方案涵盖了生物医药、生物农业、生物工程等多个领域，包括基因编辑、细胞培养、蛋白质表达、抗体制备、生物芯片等多个方面。我们的产品和解决方案已经被广泛应用于医疗、农业、环保、食品安全等多个领域，为客户提供了高效、可靠、安全的生物技术产品和解决方案。
+                    </p>
+                    <ul class="about1ul">
+                        <li data-aos="fade-up">
+                            <strong>10+年</strong>
+                            <p>公司成立</p>
+                        </li>
+
+                        <li data-aos="fade-up">
+                            <strong>2000+平</strong>
+                            <p>办公面积</p>
+                        </li>
+
+                        <li data-aos="fade-up">
+                            <strong>100+人</strong>
+                            <p>在职员工</p>
+                        </li>
+
+                        <li data-aos="fade-up">
+                            <strong>20+件</strong>
+                            <p>获得资质</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="aboutus1conright">
+                    <video
+                        id="myVideo"
+                        src="https://www.400301.com/video/banner-video-2.mp4"
+                        width="100%"
+                        controls=""
+                        loop=""
+                        muted="muted"
+                        class="mobile-banner-video"
+                    >
+                        您的浏览器不支持 video 标签。</video
+                    ><!-- 如果是图片 -->
+                    <p></p>
+                    <!-- <img src="" alt=""> -->
+                </div>
+            </div>
+        </div>
+        <!-- culture -->
+        <div class="culture">
+            <div class="culturecon">
+                <div class="con_title">
+                    <strong>企业文化</strong>
+                </div>
+                <ul>
+                    <li>
+                        <img src="upload/20230712153042.png" alt="企业使命" />
+                        <div class="culpos">
+                            <strong>企业使命</strong>
+                            <p>成为科研及诊断领域全球知名的生命科学产品和服务供应商，持续为客户创造价值让努力奋斗的员工过上好生活</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <img src="upload/20230712153041.png" alt="企业使命" />
+                        <div class="culpos">
+                            <strong>企业使命</strong>
+                            <p>成为科研及诊断领域全球知名的生命科学产品和服务供应商，持续为客户创造价值让努力奋斗的员工过上好生活</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- honor -->
+        <div class="honor">
+            <div class="honorcon">
+                <div class="con_title">
+                    <strong>荣誉资质</strong>
+                </div>
+                <ul>
+                    <li><img src="upload/20230712153538.png" alt="1" /></li>
+
+                    <li><img src="upload/20230712153536.png" alt="1" /></li>
+
+                    <li><img src="upload/20230712153535.png" alt="1" /></li>
+
+                    <li><img src="upload/20230712153534.png" alt="1" /></li>
+
+                    <li><img src="upload/20230712153532.png" alt="1" /></li>
+
+                    <li><img src="upload/20230712153531.png" alt="1" /></li>
+
+                    <li><img src="upload/20230712153529.png" alt="1" /></li>
+
+                    <li><img src="upload/20230712153527.png" alt="1" /></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="foot">
+            <div class="footer">
+                <div class="footerleft">
+                    <ul>
+                        <li>
+                            <strong style="cursor: pointer" onclick="window.open('Default.aspx','_self')">首页</strong>
+                        </li>
+
+                        <li>
+                            <strong style="cursor: pointer" onclick="window.open('Aboutus.html?ClassID=2','_self')">关于我们</strong>
+                        </li>
+
+                        <li>
+                            <strong style="cursor: pointer" onclick="window.open('Product.aspx','_self')">产品中心</strong>
+                        </li>
+
+                        <li>
+                            <strong style="cursor: pointer" onclick="window.open('News.aspx?ClassID=14','_self')">新闻中心</strong>
+
+                            <a href="News.aspx?ClassID=14"> 新闻资讯 </a>
+
+                            <a href="News.aspx?ClassID=15"> 集团新闻 </a>
+
+                            <a href="News.aspx?ClassID=16"> 行业新闻 </a>
+
+                            <a href="News.aspx?ClassID=17"> 媒体报道 </a>
+                        </li>
+
+                        <li>
+                            <strong style="cursor: pointer" onclick="window.open('News.aspx?ClassID=5','_self')">办公环境</strong>
+                        </li>
+
+                        <li>
+                            <strong style="cursor: pointer" onclick="window.open('Message.aspx?ClassID=22','_self')">在线留言</strong>
+                        </li>
+
+                        <li>
+                            <strong style="cursor: pointer" onclick="window.open('Contact.aspx?ClassID=23','_self')">联系我们</strong>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footerright">
+                    <ul>
+                        <li>
+                            <img src="upload/img/20230719172413.jpg" alt="微信" />
+                            <p>微信</p>
+                        </li>
+                        <li>
+                            <img src="upload/img/20230719172431.png" alt="官网" />
+                            <p>官网</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- copy -->
+        <div class="copy">
+            <div class="copycon">
+                © 2024 苏州爱目医疗科技有限公司&nbsp;&nbsp;All Rights Reserved. &nbsp;&nbsp;备案号：<a
+                    href="http://beian.miit.gov.cn/"
+                    target="_blank"
+                    >苏ICP备202388888888号</a
+                >
+
+                <a href="https://www.400301.com/" title="腾云建站仅向商家提供技术服务" target="_blank"> 腾云建站仅向商家提供技术服务 </a>
+            </div>
+        </div>
+
+        <script src="js/bugFixed.js"></script>
+        <script src="js/ml_script.js"></script>
+
+        <!-- 购物车 -->
+
+        <!-- 网站通用侧边栏底部菜单 -->
+        <link rel="stylesheet" href="css/ML_contact_nav.css" />
+        <!-- 手机端底部菜单 -->
+        <ul class="ml_mbbot">
+            <li>
+                <a href="/" style="text-align: center">
+                    <i class="fa fa-home"></i>
+                    <p>首页</p>
+                </a>
+            </li>
+            <li>
+                <a href="Tel:0513-88888888" style="text-align: center">
+                    <i class="fa fa-phone"></i>
+                    <p>电话</p>
+                </a>
+            </li>
+            <li>
+                <a href="Message.aspx?ClassID=22" style="text-align: center">
+                    <i class="fa fa-envelope-o"></i>
+                    <p>留言</p>
+                </a>
+            </li>
+            <li>
+                <a href="#top" style="text-align: center">
+                    <i class="fa fa-arrow-circle-o-up"></i>
+                    <p>回到顶部</p>
+                </a>
+            </li>
+        </ul>
+        <!-- 手机端底部菜单 -->
+
+        <!-- 电脑侧边栏 -->
+
+        <div class="ml_sidebar">
+            <ul>
+                <li>
+                    <i class="fa fa-phone"></i><span>电话</span>
+                    <div class="ml_sidebar_pos">18888888888</div>
+                </li>
+
+                <li>
+                    <i class="fa fa-qq"></i><span>QQ</span>
+                    <div class="ml_sidebar_pos">888888</div>
+                </li>
+
+                <li>
+                    <i class="fa fa-qrcode"></i><span>微信</span>
+                    <div class="ml_sidebar_pos ml_sidebar_pos_code">
+                        <img src="upload/20230719172345.jpg" alt="二维码" />
+                    </div>
+                </li>
+
+                <li onclick="window.open('tencent://message/?uin=888888&Site=Sambow&Menu=yes')">
+                    <i class="fa fa-user"></i><span>客服</span>
+                </li>
+
+                <li class="backtotop ml_sidebar_show">
+                    <a href="#top" style="color: #fff; display: flex; flex-direction: column"
+                        ><i class="fa fa-angle-up"></i><span>返回顶部</span></a
+                    >
+                </li>
+            </ul>
+        </div>
+
+        <!-- 电脑侧边栏 -->
+        <!-- 网站通用侧边栏底部菜单 -->
+    </body>
+</html>
+
