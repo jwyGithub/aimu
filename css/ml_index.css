@@ -1300,7 +1300,6 @@ img {
         display: block;
         /* border-radius: 50%; */
         margin: 0 auto;
-        aspect-ratio: 3/4;
     }
     .con1con ul li span {
         font-size: 14px;
