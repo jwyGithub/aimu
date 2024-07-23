@@ -35,3 +35,11 @@ img {
     background-color: var(--main-color);
     top: 0px;
 }
+
+.ml_banner .swiper-slide a {
+    display: block;
+    text-align: center;
+    height: fit-content;
+    /* border-top: 1px solid var(--main-color);
+        border-bottom: 1px solid var(--main-color); */
+}
