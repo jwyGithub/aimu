@@ -173,7 +173,7 @@ img {
         text-align: center;
         height: fit-content;
         border-top: 1px solid var(--main-color);
-        border-bottom: 1px solid var(--main-color);
+        /* border-bottom: 1px solid var(--main-color); */
     }
     .bannerpage .swiper-pagination-bullet {
         width: 15px !important;
