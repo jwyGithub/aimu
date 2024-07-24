@@ -92,7 +92,10 @@
             <!-- 电脑端头部 -->
             <div class="pchead">
                 <div class="pcheader">
-                    <a href="http://tengyun.template.tyjz.com" class="pclogo"><img src="upload/img/20231116150436.png" alt="公司LOGO" /></a>
+                    <a href="http://tengyun.template.tyjz.com" class="pclogo">
+                        <!-- <img src="upload/img/20231116150436.png" alt="公司LOGO" /> -->
+                        <span style="color: #00aca0; font-size: 22px; font-weight: bold; line-height: 40px">苏州爱目医疗科技有限公司</span>
+                    </a>
                     <ul class="pcnav">
                         <!-- 一级导航 -->
 
@@ -162,7 +165,7 @@
                 <!-- 一级菜单 -->
                 <div class="ml_mbnav_1">
                     <div class="ml_mbnav_1_item">
-                        <a href="Default.aspx">首页</a>
+                        <a href="index.html">首页</a>
                     </div>
                     <!-- 二级菜单 -->
                     <!-- 存在二级和三级的时候添加箭头 -->
@@ -234,7 +237,7 @@
                 </div>
             </div>
 
-            <div class="ml_inner_nav">
+            <!-- <div class="ml_inner_nav">
                 <div class="ml_inner_nav_con">
                     <div class="ml_inner_nav_con_div">
                         <a class="propage_sec_fir" href="Product.aspx?Typeid=1">医药健康</a>
@@ -248,7 +251,7 @@
                         <a class="propage_sec_fir" href="Product.aspx?Typeid=3">实验仪器</a>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
             <div class="ml_bread_inner">
                 <a href="/">首页</a>
@@ -256,433 +259,17 @@
                 <a>产品展示</a>
             </div>
 
-            <div class="inside">
-                <!--Content Start-->
-                <!-- 产品详情 -->
-                <div class="ml_prodetail">
-                    <div class="ml_prodetailleft">
-                        <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper-container mySwiper2">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <img src="upload/20230720160841939_76245.jpg" />
-                                </div>
-                            </div>
-                        </div>
-                        <div thumbsslider="" class="swiper-container mySwiper">
-                            <div class="swiper-wrapper">
-                                <div data-aos="fade-up" class="swiper-slide">
-                                    <img src="upload/20230720160841939_76245.jpg" />
-                                </div>
-                            </div>
-                            <!-- 如果需要导航按钮 -->
-                            <div class="swiper-button-prev"></div>
-                            <div class="swiper-button-next"></div>
-                        </div>
-                    </div>
-                    <script>
-                        var swiper = new Swiper('.mySwiper', {
-                            spaceBetween: 10,
-                            slidesPerView: 4,
-                            freeMode: true,
-                            watchSlidesProgress: true,
-                            // 濡傛灉闇€瑕佸墠杩涘悗閫€鎸夐挳
-                            navigation: {
-                                nextEl: '.swiper-button-next',
-                                prevEl: '.swiper-button-prev'
-                            }
-                        });
-                        var swiper2 = new Swiper('.mySwiper2', {
-                            spaceBetween: 10,
-
-                            thumbs: {
-                                swiper: swiper
-                            }
-                        });
-                    </script>
-                    <div class="ml_prodetailright">
-                        <strong>医疗设备 </strong>
-
-                        <span style="display: none">价格：<font class="price"></font>元</span>
-
-                        <p>这里是内容<br />这里是内容<br />这里是内容<br />这里是内容</p>
-                        <!-- 商品属性 -->
-                        <div class="shuxing"></div>
-                        <script>
-                            $('.shuxingitem ul li').click(function (e) {
-                                e.preventDefault();
-                                var num = $('.shuxingitem ul li').index(this);
-                                $(this).addClass('chooesen').siblings().removeClass('chooesen');
-                                var id = '';
-                                $('.chooesen').each(function () {
-                                    if (id == '') {
-                                        id = $(this).attr('date');
-                                    } else {
-                                        id += '-' + $(this).attr('date');
-                                    }
-                                });
-                                var hidjiage = $('.json').text();
-                                var jsonArray = JSON.parse(hidjiage);
-                                $('.price').text(jsonArray[id]);
-                                $('.price').parent().show();
-                            });
-                        </script>
-
-                        <!-- 商品属性 -->
-
-                        <!-- 在线询价 -->
-                        <style>
-                            @media only screen and (min-width: 996px) {
-                                .query {
-                                    width: 150px;
-                                    height: 40px;
-                                    line-height: 40px;
-                                    display: block;
-                                    background-color: var(--main-color);
-                                    font-size: 14px;
-                                    text-align: center;
-                                    border-radius: 5px;
-                                    color: var(--main-color-white);
-                                    margin-top: 20px;
-                                }
-                                .query_lay {
-                                    position: fixed;
-                                    top: 0;
-                                    left: 0;
-                                    width: 100%;
-                                    height: 100%;
-                                    background: rgba(0, 0, 0, 0.5);
-                                    z-index: 999;
-                                    display: none;
-                                }
-                                .query_layout {
-                                    display: flex;
-                                    align-items: center;
-                                    justify-content: center;
-                                    flex-direction: column;
-                                    width: 100%;
-                                    height: 100%;
-                                }
-                                .query_laycon {
-                                    width: 500px;
-                                    padding: 20px;
-                                    background-color: #fff;
-                                }
-                                .query_laycon input {
-                                    width: 100%;
-                                    height: 40px;
-                                    padding-left: 15px;
-                                    border: 1px solid #ccc;
-                                    border-radius: 3px;
-                                    margin-bottom: 20px;
-                                    outline: none;
-                                }
-                                .query_laycon textarea {
-                                    width: 100%;
-                                    outline: none;
-                                    height: 80px;
-                                    padding-left: 15px;
-                                    padding-top: 15px;
-                                    border: 1px solid #ccc;
-                                    border-radius: 3px;
-                                    margin-bottom: 20px;
-                                }
-                                .query_laycon strong {
-                                    display: block;
-                                    font-size: 22px;
-                                    color: #303133;
-                                    text-align: center;
-                                }
-                                .b_cz {
-                                    width: 100%;
-                                    display: flex;
-                                    justify-content: space-around;
-                                }
-                                .b_cz a {
-                                    display: block;
-                                    width: 30%;
-                                    height: 40px;
-                                    line-height: 40px;
-                                    text-align: center;
-                                    color: white;
-                                    background-color: var(--main-color);
-                                }
-                                .b_cz .close_cancle {
-                                    background-color: #b5b5b5;
-                                }
-                            }
-
-                            @media only screen and (max-width: 996px) {
-                                .query {
-                                    width: 150px;
-                                    height: 40px;
-                                    line-height: 40px;
-                                    display: block;
-                                    background-color: var(--main-color);
-                                    font-size: 14px;
-                                    text-align: center;
-                                    border-radius: 5px;
-                                    color: var(--main-color-white);
-                                    margin-top: 20px;
-                                }
-                                .query_lay {
-                                    position: fixed;
-                                    top: 0;
-                                    left: 0;
-                                    width: 100%;
-                                    height: 100%;
-                                    background: rgba(0, 0, 0, 0.5);
-                                    z-index: 999;
-                                    display: none;
-                                }
-                                .query_layout {
-                                    display: flex;
-                                    align-items: center;
-                                    justify-content: center;
-                                    flex-direction: column;
-                                    width: 100%;
-                                    height: 100%;
-                                }
-                                .query_laycon {
-                                    width: 90%;
-                                    padding: 20px;
-                                    background-color: #fff;
-                                }
-                                .query_laycon input {
-                                    width: 100%;
-                                    height: 40px;
-                                    padding-left: 15px;
-                                    border: 1px solid #ccc;
-                                    border-radius: 3px;
-                                    margin-bottom: 20px;
-                                    outline: none;
-                                }
-                                .query_laycon textarea {
-                                    width: 100%;
-                                    outline: none;
-                                    height: 80px;
-                                    padding-left: 15px;
-                                    padding-top: 15px;
-                                    border: 1px solid #ccc;
-                                    border-radius: 3px;
-                                    margin-bottom: 20px;
-                                }
-                                .query_laycon strong {
-                                    display: block;
-                                    font-size: 22px;
-                                    color: #303133;
-                                    text-align: center;
-                                }
-                                .b_cz {
-                                    width: 100%;
-                                    display: flex;
-                                    justify-content: space-around;
-                                }
-                                .b_cz a {
-                                    display: block;
-                                    width: 30%;
-                                    height: 40px;
-                                    line-height: 40px;
-                                    text-align: center;
-                                    color: white;
-                                    background-color: var(--main-color);
-                                }
-                                .b_cz .close_cancle {
-                                    background-color: #b5b5b5;
-                                }
-                            }
-                        </style>
-                        <a href="#" class="query">在线询价</a>
-                        <!-- 询价弹框 -->
-
-                        <script>
-                            $('.close_cancle').click(function (e) {
-                                e.preventDefault();
-                                $('.query_lay').fadeOut();
-                            });
-                            $('.query').click(function (e) {
-                                e.preventDefault();
-                                $('.query_lay').fadeIn();
-                            });
-
-                            function zaixianxunpan() {
-                                //姓名
-                                var a1 = document.getElementById('a1').value;
-                                if (a1 == '') {
-                                    alert('请输入姓名');
-                                    document.getElementById('a1').focus();
-                                    return false;
-                                }
-
-                                var a2 = document.getElementById('a2').value;
-                                if (a2 == '') {
-                                    alert('请输入电话');
-                                    document.getElementById('a2').focus();
-                                    return false;
-                                }
-
-                                var a3 = document.getElementById('a3').value;
-                                if (a3 == '') {
-                                    alert('请输入地址');
-                                    document.getElementById('a3').focus();
-                                    return false;
-                                }
-
-                                var a4 = document.getElementById('a4').value;
-                                if (a4 == '') {
-                                    alert('请输入留言');
-                                    document.getElementById('a4').focus();
-                                    return false;
-                                }
-
-                                //提交信息开始
-                                $.ajax({
-                                    type: 'post',
-                                    data: {
-                                        All: '询盘产品【医疗设备】，姓名：' + a1 + '，电话：' + a2 + '，地址：' + a3 + '，留言内容：' + a4
-                                    },
-                                    url: 'Check/CheckSubmit.aspx',
-                                    success: function (msg) {
-                                        if (msg == 'success') {
-                                            alert('恭喜你，资料提交成功！');
-                                            location.reload();
-                                        } else {
-                                            alert('含非法字符，资料提交失败！');
-                                        }
-                                    }
-                                });
-                            }
-                        </script>
-                        <!-- 在线询价 -->
-                        <div class="tab_pro">
-                            <a href="#"> <i class="fa fa-arrow-left"></i> 上一个</a>
-                            <a href="ProDetail.html?ProId=42">下一个 <i class="fa fa-arrow-right"></i> </a>
-                        </div>
-                    </div>
-                </div>
-                <!-- 产品描述 -->
-                <div class="ml_description">
-                    <div class="ml_description_tab">
-                        <strong class="strong_1 tabactive">详细内容</strong>
-                        <strong class="strong_1">规格参数</strong>
-                        <strong class="strong_1">产品包装</strong>
-                    </div>
-
-                    <div class="ml_descriptioncon">
-                        <div class="ml_descriptioncon_fy" style="display: block">
-                            <div>
-                                <p style="text-align: center"><img src="/upload/20230720160841939_76245.jpg" /></p>
-                            </div>
-                        </div>
-                        <div class="ml_descriptioncon_fy">
-                            <p></p>
-                        </div>
-                        <div class="ml_descriptioncon_fy">
-                            <p></p>
-                        </div>
-                    </div>
-                    <!-- 切换 -->
-                    <script>
-                        $('.ml_description_tab .strong_1').click(function (e) {
-                            e.preventDefault();
-                            var tabnum = $('.ml_description_tab .strong_1').index(this);
-                            $('.ml_descriptioncon_fy').eq(tabnum).show().siblings('.ml_descriptioncon_fy').hide();
-                            $('.ml_description_tab .strong_1').eq(tabnum).addClass('tabactive').siblings().removeClass('tabactive');
-                        });
-                    </script>
-                </div>
-                <!-- 相关产品 -->
-                <div class="ml_description ml_related">
-                    <strong class="strong_1">相关产品</strong>
-                    <!-- 热门产品 -->
-                    <div class="ml_indexpro">
-                        <div class="ml_indexprocon">
-                            <ul>
-                                <li data-aos="fade-up" data-aos-delay="100">
-                                    <div class="indexpro_div">
-                                        <a href="ProDetail.aspx?Proid=42">
-                                            <img src="upload/20230720160841939_76244.jpg" alt="医疗设备"
-                                        /></a>
-                                        <p>医疗设备</p>
-                                        <span></span>
-                                    </div>
-                                </li>
-
-                                <li data-aos="fade-up" data-aos-delay="200">
-                                    <div class="indexpro_div">
-                                        <a href="ProDetail.aspx?Proid=41">
-                                            <img src="upload/20230720160841939_76243.jpg" alt="医疗设备"
-                                        /></a>
-                                        <p>医疗设备</p>
-                                        <span></span>
-                                    </div>
-                                </li>
-
-                                <li data-aos="fade-up" data-aos-delay="300">
-                                    <div class="indexpro_div">
-                                        <a href="ProDetail.aspx?Proid=40">
-                                            <img src="upload/20230720160841939_76242.jpg" alt="医疗设备"
-                                        /></a>
-                                        <p>医疗设备</p>
-                                        <span></span>
-                                    </div>
-                                </li>
-
-                                <li data-aos="fade-up" data-aos-delay="400">
-                                    <div class="indexpro_div">
-                                        <a href="ProDetail.aspx?Proid=39">
-                                            <img src="upload/20230720160841923_90971.jpg" alt="医疗设备"
-                                        /></a>
-                                        <p>医疗设备</p>
-                                        <span></span>
-                                    </div>
-                                </li>
-
-                                <li data-aos="fade-up" data-aos-delay="500">
-                                    <div class="indexpro_div">
-                                        <a href="ProDetail.aspx?Proid=38">
-                                            <img src="upload/20230720160841923_90970.jpg" alt="医疗设备"
-                                        /></a>
-                                        <p>医疗设备</p>
-                                        <span></span>
-                                    </div>
-                                </li>
-
-                                <li data-aos="fade-up" data-aos-delay="600">
-                                    <div class="indexpro_div">
-                                        <a href="ProDetail.aspx?Proid=37">
-                                            <img src="upload/20230720160819008_87999.jpg" alt="医疗设备"
-                                        /></a>
-                                        <p>医疗设备</p>
-                                        <span></span>
-                                    </div>
-                                </li>
-
-                                <li data-aos="fade-up" data-aos-delay="700">
-                                    <div class="indexpro_div">
-                                        <a href="ProDetail.aspx?Proid=36">
-                                            <img src="upload/20230720160819008_87998.jpg" alt="医疗设备"
-                                        /></a>
-                                        <p>医疗设备</p>
-                                        <span></span>
-                                    </div>
-                                </li>
-
-                                <li data-aos="fade-up" data-aos-delay="800">
-                                    <div class="indexpro_div">
-                                        <a href="ProDetail.aspx?Proid=35">
-                                            <img src="upload/20230720160819008_87997.jpg" alt="医疗设备"
-                                        /></a>
-                                        <p>医疗设备</p>
-                                        <span></span>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div style="display: none" class="json">{}</div>
-                <!--Content End-->
+            <div class="pro-con" style="width: 100%">
+                <img src="" alt="" style="width: 100%; height: auto; display: block" />
             </div>
+
+            <script>
+                const proCon = document.querySelector('.pro-con');
+                const proId = location.search.split('=')[1];
+                const proImg = document.querySelector('.pro-con > img');
+                proImg.src = `source_images/products/p-d-${proId}.jpg`;
+            </script>
+
             <!-- inside -->
             <!-- con7 -->
 
