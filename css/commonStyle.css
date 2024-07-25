@@ -1027,7 +1027,7 @@ img {
         /* max-width: 1300px; */
         margin: 0 auto;
         background-color: var(--main-color-white);
-        /* padding: 25px; */
+        padding: 15px;
     }
     .ml_map1 {
         /* min-height: 100px;
