@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>苏州爱目医疗科技有限公司</title>
+        <meta id="description" name="description" content="苏州爱目医疗科技有限公司" />
+        <meta id="keywords" name="keywords" content="苏州爱目医疗科技有限公司" />
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/ml_index.css" />
+        <link rel="stylesheet" href="css/ML_swiper.min.css" />
+        <link rel="stylesheet" href="ML_font-awesome/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="css/ML_aos.css" />
+        <script src="js/ML_jquery.min.js"></script>
+        <script src="js/ML_aos.js"></script>
+        <script src="js/ML_swiper.min.js"></script>
+
+        <link rel="stylesheet" href="css/commonStyle.css" />
+
+        <style type="text/css">
+            /*contact*/
+
+            .contact007 {
+                margin-top: 10px;
+            }
+
+            .contact007 ul li {
+                line-height: 30px;
+                border-bottom: #e3d2c1 dashed 1px;
+            }
+
+            #ContactMoban {
+                margin: 50px auto;
+            }
+        </style>
+        <script type="text/javascript" src="js/contact.js"></script>
+        <link rel="stylesheet" href="css/ML_index.css" />
+        <link rel="stylesheet" href="css/commonStyle.css" />
+    </head>
+
+    <body>
+        <form id="form1">
+            <!-- <script type="text/javascript" src="https://tyw.key.400301.com/js/replace_word_limit.js"></script> -->
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <script type="text/javascript" language="javascript">
+                //①搜索开始
+                function checkSearch() {
+                    if ($('#KeyName').val() == '' || $('#KeyName').val() == null) {
+                        alert('请输入搜索关键词');
+                        $('#KeyName').val('');
+                        $('#KeyName').focus();
+                        return false;
+                    }
+                    var Search_url = $('#key-Search').attr('value');
+                    window.location.href = Search_url + '?q=' + escape($('#KeyName').val());
+                }
+
+                //②按下回车键出发某个按钮开始
+                document.onkeydown = function (event) {
+                    e = event ? event : window.event ? window.event : null;
+                    if (e.keyCode == 13) {
+                        document.getElementById('SearchButton').click();
+                        return false;
+                    }
+                };
+            </script>
+            <a href="ProSearch.aspx" style="display: none" value="ProSearch.aspx" id="key-Search"></a>
+            <!-- 手机端头部箭头 -->
+            <link rel="stylesheet" href="css/nav.css" />
+            <link rel="stylesheet" href="css/bugfixed.css" />
+
+            <!-- 手机端头部箭头 -->
+
+            <!-- 电脑端头部 -->
+            <div class="pchead">
+                <div class="pcheader">
+                    <a href="/" class="pclogo"><img src="upload/img/20231116150436.png" alt="公司LOGO" /></a>
+                    <ul class="pcnav">
+                        <!-- 一级导航 -->
+
+                        <li class="first_li">
+                            <a class="first_a" href="/">首页</a>
+                        </li>
+
+                        <li class="first_li">
+                            <a class="first_a" href="Aboutus.html">关于我们</a>
+                        </li>
+
+                        <!-- <li class="first_li">
+                            <a class="first_a" href="Product.aspx">产品中心</a>
+                        </li> -->
+
+                        <!-- <li class="first_li">
+                            <a class="first_a" href="News.aspx?ClassID=14">新闻中心</a>
+
+                            <ul class="pc_sec_nav">
+                                <li class="pc_sec_item">
+                                    <a href="News.aspx?ClassID=14" class="second_a">新闻资讯</a>
+                                </li>
+
+                                <li class="pc_sec_item">
+                                    <a href="News.aspx?ClassID=15" class="second_a">集团新闻</a>
+                                </li>
+
+                                <li class="pc_sec_item">
+                                    <a href="News.aspx?ClassID=16" class="second_a">行业新闻</a>
+                                </li>
+
+                                <li class="pc_sec_item">
+                                    <a href="News.aspx?ClassID=17" class="second_a">媒体报道</a>
+                                </li>
+                            </ul>
+                        </li> -->
+                        <!-- 
+                        <li class="first_li">
+                            <a class="first_a" href="News.aspx?ClassID=5">办公环境</a>
+                        </li>
+
+                        <li class="first_li">
+                            <a class="first_a" href="Message.aspx?ClassID=22">在线留言</a>
+                        </li> -->
+
+                        <li class="first_li">
+                            <a class="first_a" href="Contact.html">联系我们</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 电脑端头部 -->
+            <!-- 手机端头部 -->
+            <div class="ml_mb_head" data-aos="zoom-in">
+                <a href="/" class="ml_mb_logo"> <img src="upload/img/20231116150436.png" /></a>
+                <div class="hb">
+                    <span class="top_span"></span>
+                    <span class="center_span"></span>
+                    <span class="bottom_span"></span>
+                </div>
+            </div>
+            <!-- 手机端头部 -->
+            <!-- 手机端菜单 -->
+            <div class="ml_mb_nav">
+                <!-- 存在二级和三级的时候添加箭头 -->
+                <!-- 一级菜单 -->
+                <div class="ml_mbnav_1">
+                    <div class="ml_mbnav_1_item">
+                        <a href="/">首页</a>
+                    </div>
+                    <!-- 二级菜单 -->
+                    <!-- 存在二级和三级的时候添加箭头 -->
+
+                    <div class="ml_mbnav_1_item">
+                        <a href="Aboutus.html">关于我们</a>
+                    </div>
+                    <!-- 二级菜单 -->
+                    <!-- 存在二级和三级的时候添加箭头 -->
+
+                    <!-- <div class="ml_mbnav_1_item">
+                        <a href="Product.aspx">产品中心</a>
+                    </div> -->
+                    <!-- 二级菜单 -->
+                    <!-- 存在二级和三级的时候添加箭头 -->
+
+                    <!-- <div class="ml_mbnav_1_item">
+                        <a href="News.aspx?ClassID=14">新闻中心</a>
+                        <i class="fa fa-angle-right mb_item1_arrow"></i>
+                    </div> -->
+                    <!-- 二级菜单 -->
+                    <!-- 存在二级和三级的时候添加箭头 -->
+                    <!-- 
+                    <div class="ml_mbnav_2">
+                        <div class="ml_mbnav_2_item">
+                            <a href="News.aspx?ClassID=14">新闻资讯</a>
+                        </div>
+
+                        <div class="ml_mbnav_2_item">
+                            <a href="News.aspx?ClassID=15">集团新闻</a>
+                        </div>
+
+                        <div class="ml_mbnav_2_item">
+                            <a href="News.aspx?ClassID=16">行业新闻</a>
+                        </div>
+
+                        <div class="ml_mbnav_2_item">
+                            <a href="News.aspx?ClassID=17">媒体报道</a>
+                        </div>
+                    </div> -->
+
+                    <!-- <div class="ml_mbnav_1_item">
+                        <a href="News.aspx?ClassID=5">办公环境</a>
+                    </div> -->
+                    <!-- 二级菜单 -->
+                    <!-- 存在二级和三级的时候添加箭头 -->
+                    <!-- 
+                    <div class="ml_mbnav_1_item">
+                        <a href="Message.aspx?ClassID=22">在线留言</a>
+                    </div> -->
+                    <!-- 二级菜单 -->
+                    <!-- 存在二级和三级的时候添加箭头 -->
+
+                    <div class="ml_mbnav_1_item">
+                        <a href="Contact.html">联系我们</a>
+                    </div>
+                    <!-- 二级菜单 -->
+                    <!-- 存在二级和三级的时候添加箭头 -->
+                </div>
+            </div>
+            <!-- 手机端菜单 -->
+            <!-- 固定分隔 -->
+            <div class="sep"></div>
+
+            <div class="inbanner" style="background-image: url(upload/img/20230616165251.png)">
+                <div class="inbannercon">
+                    <strong>Contact Us</strong>
+                    <p>联系我们</p>
+                </div>
+            </div>
+
+            <div class="ml_bread_inner">
+                <a href="/">首页</a>
+                <span>></span>
+                <a>联系我们</a>
+            </div>
+
+            <div class="inside">
+                <!--Content Start-->
+
+                <!-- <div id="ContactMoban" style="width: 100%">
+                    <div class="ml_contactcon_module2">
+                        <div class="ml_map1">
+                            <li>
+                                <p>
+                                    <iframe
+                                        class="ueditor_baidumap"
+                                        src="http://14149.template.tyjz.com/qz_ueditor/dialogs/map/show.html#center=116.404,39.915&zoom=10&width=530&height=340&markers=116.404,39.915&markerStyles=l,A"
+                                        frameborder="0"
+                                        width="100%"
+                                        height="500px"
+                                    ></iframe>
+                                </p>
+                            </li>
+                        </div>
+                        <div class="ml_contactcon_module1">
+                            <div class="ml_contactcon_module1_top">
+                                <ul>
+                                    <li data-aos="fade-up">
+                                        <i class="fa fa-phone"></i><strong>联系电话</strong>
+                                        <p>0513-88888888</p>
+                                    </li>
+                                    <li data-aos="fade-up">
+                                        <i class="fa fa-envelope-o"></i><strong>联系邮箱</strong>
+                                        <p>888888@xx.com</p>
+                                    </li>
+                                    <li data-aos="fade-up">
+                                        <i class="fa fa-location-arrow"></i><strong>联系地址</strong>
+                                        <p>江苏省南通市崇川路58号南通科技园</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="ml_contactcon_module1_bot">
+                                <div class="ml_contactcon_module1_bot_left">
+                                    <div class="ml_contactcon_right">
+                                        <strong class="tact_strong">在线留言</strong
+                                        ><input
+                                            data-aos="fade-left"
+                                            data-aos-delay="100"
+                                            type="hidden"
+                                            name="txtTitle"
+                                            value="咨询主题"
+                                            class="aos-init aos-animate"
+                                        /><input
+                                            data-aos="fade-left"
+                                            data-aos-delay="100"
+                                            type="text"
+                                            name="txtRealname"
+                                            placeholder="姓名"
+                                            class="aos-init aos-animate"
+                                        /><input
+                                            data-aos="fade-left"
+                                            data-aos-delay="200"
+                                            type="text"
+                                            name="txtPhone"
+                                            placeholder="电话"
+                                            class="aos-init aos-animate"
+                                        /><input
+                                            data-aos="fade-left"
+                                            data-aos-delay="300"
+                                            type="text"
+                                            name="txtEmail"
+                                            placeholder="邮箱"
+                                            class="aos-init aos-animate"
+                                        /><textarea
+                                            data-aos="fade-left"
+                                            data-aos-delay="400"
+                                            name="txtContent"
+                                            id="txtContent"
+                                            placeholder="留言内容"
+                                            class="aos-init aos-animate"
+                                        ></textarea
+                                        ><a
+                                            href="javascript:checkNull();"
+                                            name="Button1"
+                                            data-aos="fade-left"
+                                            data-aos-delay="500"
+                                            class="ml_sub aos-init"
+                                            >立即提交</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                <!--Content End-->
+            </div>
+            <!-- inside -->
+            <!-- con7 -->
+
+            <div class="foot">
+                <div class="footer">
+                    <div class="footerleft">
+                        <ul>
+                            <li>
+                                <strong style="cursor: pointer" onclick="window.open('index.html','_self')">首页</strong>
+                            </li>
+
+                            <li>
+                                <strong style="cursor: pointer" onclick="window.open('Aboutus.html?ClassID=2','_self')">关于我们</strong>
+                            </li>
+
+                            <!-- <li>
+                                <strong style="cursor: pointer" onclick="window.open('Product.aspx','_self')">产品中心</strong>
+                            </li> -->
+
+                            <!-- <li>
+                                <strong style="cursor: pointer" onclick="window.open('News.aspx?ClassID=14','_self')">新闻中心</strong>
+
+                                <a href="News.aspx?ClassID=14"> 新闻资讯 </a>
+
+                                <a href="News.aspx?ClassID=15"> 集团新闻 </a>
+
+                                <a href="News.aspx?ClassID=16"> 行业新闻 </a>
+
+                                <a href="News.aspx?ClassID=17"> 媒体报道 </a>
+                            </li> -->
+
+                            <!-- <li>
+                                <strong style="cursor: pointer" onclick="window.open('News.aspx?ClassID=5','_self')">办公环境</strong>
+                            </li>
+
+                            <li>
+                                <strong style="cursor: pointer" onclick="window.open('Message.aspx?ClassID=22','_self')">在线留言</strong>
+                            </li> -->
+
+                            <li>
+                                <strong style="cursor: pointer" onclick="window.open('Contact.html?ClassID=23','_self')">联系我们</strong>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footerright">
+                        <ul>
+                            <li>
+                                <img src="source_images/contact/weixin.png" alt="微信" />
+                                <p>微信</p>
+                            </li>
+                            <li>
+                                <img src="upload/img/20230719172431.png" alt="官网" />
+                                <p>官网</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- copy -->
+            <div class="copy">
+                <div class="copycon">
+                    © 2024 苏州爱目医疗科技有限公司&nbsp;&nbsp;All Rights Reserved. &nbsp;&nbsp;备案号：<a
+                        href="http://beian.miit.gov.cn/"
+                        target="_blank"
+                        >苏ICP备202388888888号</a
+                    >
+
+                    <!-- <a href="https://www.400301.com/" title="腾云建站仅向商家提供技术服务" target="_blank"> 腾云建站仅向商家提供技术服务 </a> -->
+                </div>
+            </div>
+
+            <script src="js/bugFixed.js"></script>
+            <script src="js/ml_script.js"></script>
+
+            <!-- 购物车 -->
+
+            <!-- 网站通用侧边栏底部菜单 -->
+            <link rel="stylesheet" href="css/ML_contact_nav.css" />
+            <!-- 手机端底部菜单 -->
+            <ul class="ml_mbbot">
+                <li>
+                    <a href="/" style="text-align: center">
+                        <i class="fa fa-home"></i>
+                        <p>首页</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="Tel:19005217791" style="text-align: center">
+                        <i class="fa fa-phone"></i>
+                        <p>电话</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="Message.aspx?ClassID=22" style="text-align: center">
+                        <i class="fa fa-envelope-o"></i>
+                        <p>留言</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#top" style="text-align: center">
+                        <i class="fa fa-arrow-circle-o-up"></i>
+                        <p>回到顶部</p>
+                    </a>
+                </li>
+            </ul>
+            <!-- 手机端底部菜单 -->
+
+            <!-- 电脑侧边栏 -->
+
+            <div class="ml_sidebar">
+                <ul>
+                    <li>
+                        <i class="fa fa-phone"></i><span>电话</span>
+                        <div class="ml_sidebar_pos">19005217791</div>
+                    </li>
+
+                    <li>
+                        <i class="fa fa-qq"></i><span>QQ</span>
+                        <div class="ml_sidebar_pos">888888</div>
+                    </li>
+
+                    <li>
+                        <i class="fa fa-qrcode"></i><span>微信</span>
+                        <div class="ml_sidebar_pos ml_sidebar_pos_code">
+                            <img src="source_images/contact/weixin.png" alt="二维码" />
+                        </div>
+                    </li>
+
+                    <li onclick="window.open('tencent://message/?uin=888888&Site=Sambow&Menu=yes')">
+                        <i class="fa fa-user"></i><span>客服</span>
+                    </li>
+
+                    <li class="backtotop ml_sidebar_show">
+                        <a href="#top" style="color: #fff; display: flex; flex-direction: column"
+                            ><i class="fa fa-angle-up"></i><span>返回顶部</span></a
+                        >
+                    </li>
+                </ul>
+            </div>
+
+            <!-- 电脑侧边栏 -->
+            <!-- 网站通用侧边栏底部菜单 -->
+        </form>
+    </body>
+</html>
+
